@@ -104,6 +104,11 @@ public class DNADescryptor
 		}
 	}
 	
+	private static void doNothing()
+	{
+		//doNothing
+	}
+	
 	
 
 }
