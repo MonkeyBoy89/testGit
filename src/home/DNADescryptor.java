@@ -1,5 +1,6 @@
 package home;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -109,6 +110,13 @@ public class DNADescryptor
 		//doNothing
 	}
 	
-	
+	/**
+	 * The current date
+	 * @return
+	 */
+	private static Date now()
+	{
+		return new Date();
+	}
 
 }
