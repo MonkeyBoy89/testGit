@@ -116,6 +116,7 @@ public class DNADescryptor
 	 */
 	private static Date now()
 	{
+		//Commentaire
 		return new Date();
 	}
 
