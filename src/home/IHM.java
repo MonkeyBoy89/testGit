@@ -1,6 +1,8 @@
 package home;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.MouseAdapter;
@@ -12,6 +14,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.text.StyleConstants.FontConstants;
+import javax.swing.text.StyledEditorKit.FontSizeAction;
 
 /**
  * Gestion de l'affichage graphique de l'application
@@ -91,6 +94,8 @@ public class IHM {
 	private static void createTextBox(JFrame window)
 	{
 		textBox = new JTextField();
+		textBox.setFont(new Font("American Typewriter", Font.TRUETYPE_FONT, 20));
+		textBox.setForeground(Color.DARK_GRAY);
 		window.getContentPane().add(textBox, BorderLayout.NORTH);
 	}
 	
