@@ -8,7 +8,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-import org.omg.CORBA.Environment;
 
 /**
  * 
@@ -19,7 +18,7 @@ public class DNADescryptor
 {
 	private static Map<String, String> mapKey = new HashMap<String, String>();
 	private static Scanner sc = new Scanner(System.in);
-	private static String EMPTY ="";
+	private static final String EMPTY ="";
 	
 	static
 	{
@@ -88,13 +87,13 @@ public class DNADescryptor
 	 * @param seq
 	 * @return
 	 */
-	private static String decrypt(String seq)
+	public static String decrypt(String seq)
 	{
 		return seq.chars().mapToObj(c -> mapKey.get(String.valueOf((char)c))).collect(Collectors.joining());
 	}
 	
 	
-	private static void checkSequence(String seq) throws Exception
+	public static void checkSequence(String seq) throws Exception
 	{
 		Pattern pattern = Pattern.compile("null");
 		Matcher matcher = pattern.matcher(seq);
