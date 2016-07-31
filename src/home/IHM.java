@@ -11,6 +11,7 @@ import java.io.File;
 import javax.imageio.ImageIO;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.text.StyleConstants.FontConstants;
@@ -42,6 +43,7 @@ public class IHM {
 		fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		fenetre.setResizable(false);
 		fenetre.setContentPane(createPanel());
+		fenetre.getContentPane().setLayout(new BorderLayout());
 		createButton(fenetre);
 		createTextBox(fenetre);
 		fenetre.setVisible(true);
@@ -55,7 +57,6 @@ public class IHM {
 	
 	private static void createButton(JFrame window)
 	{
-		window.getContentPane().setLayout(new BorderLayout());
 		JButton button = new JButton("Decrypter...");
 		window.getContentPane().add(button, BorderLayout.SOUTH);
 		
@@ -98,6 +99,7 @@ public class IHM {
 		textBox.setForeground(Color.DARK_GRAY);
 		window.getContentPane().add(textBox, BorderLayout.NORTH);
 	}
+	
 	
 	
 	/**

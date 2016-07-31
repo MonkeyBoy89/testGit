@@ -107,6 +107,7 @@ public class DNADescryptor
 	private static void doNothing()
 	{
 		//doNothing
+		//Commentaire n°1
 	}
 	
 	/**
