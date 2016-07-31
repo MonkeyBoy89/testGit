@@ -108,6 +108,7 @@ public class DNADescryptor
 	{
 		//doNothing
 		//Commentaire n°1
+		//Commentaire n°2
 	}
 	
 	/**
@@ -118,6 +119,12 @@ public class DNADescryptor
 	{
 		//Commentaire
 		return new Date();
+	}
+	
+	
+	public String taMereEn(){
+		String string = "";
+		return string;
 	}
 
 }
